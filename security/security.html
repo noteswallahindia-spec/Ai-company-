@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Security & QA Agent</title>
+  <link rel="stylesheet" href="security.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <header>
+    <div>
+      <span class="status"></span>
+      <strong>Security + QA Agent</strong>
+    </div>
+    <small>AI Company / Agent 03</small>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>Check Project</h2>
+
+      <textarea id="request"
+        placeholder="Paste project requirement or agent output here..."></textarea>
+
+      <button id="scanBtn">
+        Run Security & QA Scan
+      </button>
+    </section>
+
+    <section id="result" class="card hidden">
+
+      <h2>Scan Result</h2>
+
+      <div id="statusBox"></div>
+
+      <h3>Security Checks</h3>
+      <div id="securityChecks"></div>
+
+      <h3>QA Checks</h3>
+      <div id="qaChecks"></div>
+
+      <h3>Detected Issues</h3>
+      <div id="issues"></div>
+
+      <h3>Required Actions</h3>
+      <div id="actions"></div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<script src="security.js"></script>
+
+</body>
+</html>
