@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Product Agent</title>
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+<div class="app">
+
+  <header>
+    <div>
+      <span class="status"></span>
+      <strong>Product Agent</strong>
+    </div>
+    <small>AI Company / Agent 04</small>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>Product Requirement</h2>
+
+      <textarea
+        id="request"
+        placeholder="Example: Find 4 useful products for my shopping app..."
+      ></textarea>
+
+      <button id="findBtn">
+        Find Products
+      </button>
+    </section>
+
+    <section id="result" class="card hidden">
+
+      <h2>Product Recommendations</h2>
+
+      <div id="products"></div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<script src="product.js"></script>
+
+</body>
+</html>
