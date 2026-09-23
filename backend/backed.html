@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backend Agent</title>
+  <link rel="stylesheet" href="backend.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <header>
+    <div>
+      <span class="status"></span>
+      <strong>Backend Agent</strong>
+    </div>
+    <small>AI Company / Agent 02</small>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>Backend Requirement</h2>
+
+      <textarea
+        id="request"
+        placeholder="Example: Shopping app with users, products, cart, orders and admin..."
+      ></textarea>
+
+      <button id="generateBtn">
+        Generate Backend Plan
+      </button>
+    </section>
+
+    <section id="result" class="card hidden">
+
+      <h2>Backend Architecture</h2>
+
+      <div id="architecture"></div>
+
+      <h3>Database Tables</h3>
+      <div id="tables"></div>
+
+      <h3>Authentication</h3>
+      <div id="auth"></div>
+
+      <h3>Storage</h3>
+      <div id="storage"></div>
+
+      <h3>API Tasks</h3>
+      <div id="apis"></div>
+
+      <h3>Security Rules</h3>
+      <div id="security"></div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<script src="backend.js"></script>
+
+</body>
+</html>
