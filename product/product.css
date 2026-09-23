@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #090b10;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 25px;
+  border-bottom: 1px solid #272b35;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+header strong {
+  font-size: 20px;
+}
+
+header small {
+  color: #8d94a3;
+}
+
+.status {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #35d07f;
+}
+
+main {
+  padding-top: 25px;
+}
+
+.card {
+  background: #141720;
+  border: 1px solid #272b35;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 18px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 140px;
+  background: #0d1016;
+  color: white;
+  border: 1px solid #303543;
+  border-radius: 12px;
+  padding: 15px;
+  resize: vertical;
+  font-size: 15px;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 14px;
+  border: 0;
+  border-radius: 10px;
+  background: #635bff;
+  color: white;
+  font-weight: bold;
+}
+
+.product {
+  background: #0d1016;
+  border: 1px solid #292e39;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.product h3 {
+  margin: 0 0 7px;
+}
+
+.product p {
+  color: #9299a8;
+  font-size: 13px;
+}
+
+.approval {
+  display: flex;
+  gap: 8px;
+}
+
+.approval button {
+  margin-top: 8px;
+}
+
+.approve {
+  background: #258a55;
+}
+
+.reject {
+  background: #444954;
+}
+
+.hidden {
+  display: none;
+}
