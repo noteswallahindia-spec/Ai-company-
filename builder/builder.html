@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Builder Agent</title>
+  <link rel="stylesheet" href="builder.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header>
+      <div>
+        <span class="status"></span>
+        <strong>Builder Agent</strong>
+      </div>
+      <small>AI Company / Agent 01</small>
+    </header>
+
+    <main>
+
+      <section class="card">
+        <h2>What should I build?</h2>
+
+        <textarea
+          id="request"
+          placeholder="Example: Make a Flipkart-like shopping app with login, products, cart and admin panel..."
+        ></textarea>
+
+        <button id="buildBtn">
+          Create Build Plan
+        </button>
+      </section>
+
+      <section id="result" class="card hidden">
+
+        <h2>Builder Plan</h2>
+
+        <div id="projectInfo"></div>
+
+        <h3>Pages</h3>
+        <div id="pages"></div>
+
+        <h3>Components</h3>
+        <div id="components"></div>
+
+        <h3>Development Tasks</h3>
+        <div id="tasks"></div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="builder.js"></script>
+</body>
+</html>
